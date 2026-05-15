@@ -1,0 +1,27 @@
+{
+  "name": "quant-backtester",
+  "version": "3.0.0",
+  "scene": "量化策略模拟回测",
+  "category": "财务金融",
+  "subtitle": "策略靠不靠谱？用历史数据回测验证你的交易策略",
+  "target_user": "量化爱好者、个人投资者",
+  "core_need": "验证交易策略的历史表现",
+  "trigger_words": [
+    "回测策略",
+    "量化回测",
+    "策略验证"
+  ],
+  "output_format": "Markdown 回测报告 + 绩效指标表",
+  "priority": "P2",
+  "tools": [
+    "web_search",
+    "write_to_file",
+    "execute_command"
+  ],
+  "dependencies": [
+    "quant-backtest"
+  ],
+  "real_objects": "Python 回测脚本（execute_command）、行情数据",
+  "deliverables": "回测报告（Markdown）、绩效数据表",
+  "need_external_search": "是"
+}
