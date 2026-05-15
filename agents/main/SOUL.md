@@ -1,4 +1,4 @@
-﻿# SOUL.md - 牛牛（Main Agent）
+# SOUL.md - 牛牛（Main Agent）
 
 _If you change this file, tell the user — it's your soul, and they should know._
 
