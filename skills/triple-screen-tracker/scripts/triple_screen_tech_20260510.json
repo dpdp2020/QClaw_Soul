@@ -1,0 +1,229 @@
+{
+  "date": "2026-05-10",
+  "results": [
+    {
+      "symbol": "300394",
+      "name": "天孚通信",
+      "signal": "NEUTRAL",
+      "screen1": {
+        "ema13": 311.943,
+        "ema26": 271.488,
+        "ema13_slope": 0.0033,
+        "ema26_slope": 0.0142,
+        "bullish": true,
+        "weekly_close": 326.3
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 326.3,
+        "prev_close": 328.14,
+        "quote_date": "20260508161448",
+        "high20": 388.0,
+        "low20": 305.0,
+        "pos_in_band": 0.257
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "symbol": "300308",
+      "name": "中际旭创",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 720.593,
+        "ema26": 621.823,
+        "ema13_slope": 0.0397,
+        "ema26_slope": 0.0347,
+        "bullish": true,
+        "weekly_close": 886.0
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 886.0,
+        "prev_close": 877.47,
+        "quote_date": "20260508161436",
+        "high20": 918.99,
+        "low20": 642.0,
+        "pos_in_band": 0.881
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "symbol": "300502",
+      "name": "新易盛",
+      "signal": "WATCH",
+      "screen1": {
+        "ema13": 483.269,
+        "ema26": 429.616,
+        "ema13_slope": 0.0216,
+        "ema26_slope": 0.0217,
+        "bullish": true,
+        "weekly_close": 551.67
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 551.67,
+        "prev_close": 563.5,
+        "quote_date": "20260508161457",
+        "high20": 627.8,
+        "low20": 469.09,
+        "pos_in_band": 0.52
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "symbol": "688012",
+      "name": "中微公司",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 332.301,
+        "ema26": 313.01,
+        "ema13_slope": 0.0225,
+        "ema26_slope": 0.0162,
+        "bullish": true,
+        "weekly_close": 370.0
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 370.0,
+        "prev_close": 384.6,
+        "quote_date": "20260508161436",
+        "high20": 412.22,
+        "low20": 303.88,
+        "pos_in_band": 0.61
+      },
+      "warnings": [
+        "break prev close 2%, weak signal"
+      ],
+      "errors": []
+    },
+    {
+      "symbol": "688072",
+      "name": "拓荆科技",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 388.382,
+        "ema26": 352.439,
+        "ema13_slope": 0.0318,
+        "ema26_slope": 0.0247,
+        "bullish": true,
+        "weekly_close": 463.05
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 463.05,
+        "prev_close": 479.56,
+        "quote_date": "20260508161447",
+        "high20": 489.97,
+        "low20": 358.1,
+        "pos_in_band": 0.796
+      },
+      "warnings": [
+        "break prev close 2%, weak signal"
+      ],
+      "errors": []
+    },
+    {
+      "symbol": "688120",
+      "name": "华海清科",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 182.435,
+        "ema26": 171.516,
+        "ema13_slope": 0.0142,
+        "ema26_slope": 0.0123,
+        "bullish": true,
+        "weekly_close": 195.94
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 195.94,
+        "prev_close": 200.63,
+        "quote_date": "20260508161438",
+        "high20": 207.99,
+        "low20": 172.32,
+        "pos_in_band": 0.662
+      },
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "symbol": "300274",
+      "name": "阳光电源",
+      "signal": "NEUTRAL",
+      "screen1": {
+        "ema13": 145.149,
+        "ema26": 146.428,
+        "ema13_slope": -0.0079,
+        "ema26_slope": -0.0044,
+        "bullish": false,
+        "weekly_close": 139.85
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 139.85,
+        "prev_close": 139.5,
+        "quote_date": "20260508161439",
+        "high20": 142.99,
+        "low20": 122.8,
+        "pos_in_band": 0.844
+      },
+      "warnings": [
+        "weekly ema13 sloping down, caution"
+      ],
+      "errors": []
+    },
+    {
+      "symbol": "300750",
+      "name": "宁德时代",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 405.859,
+        "ema26": 382.62,
+        "ema13_slope": 0.0138,
+        "ema26_slope": 0.0119,
+        "bullish": true,
+        "weekly_close": 437.0
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 437.0,
+        "prev_close": 451.64,
+        "quote_date": "20260508161406",
+        "high20": 468.75,
+        "low20": 379.754,
+        "pos_in_band": 0.643
+      },
+      "warnings": [
+        "break prev close 2%, weak signal"
+      ],
+      "errors": []
+    },
+    {
+      "symbol": "002371",
+      "name": "北方华创",
+      "signal": "BUY",
+      "screen1": {
+        "ema13": 484.082,
+        "ema26": 462.78,
+        "ema13_slope": 0.0209,
+        "ema26_slope": 0.0139,
+        "bullish": true,
+        "weekly_close": 540.79
+      },
+      "screen2": null,
+      "screen3": {
+        "price": 540.79,
+        "prev_close": 552.14,
+        "quote_date": "20260508161406",
+        "high20": 567.0,
+        "low20": 437.0,
+        "pos_in_band": 0.798
+      },
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}
