@@ -1,4 +1,4 @@
-﻿# IDENTITY.md
+# IDENTITY.md
 
 - **Name**: 节哥
 - **Alias**: Producer
