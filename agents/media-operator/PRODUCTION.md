@@ -1,4 +1,4 @@
-﻿# PRODUCTION.md - 视频制作工艺(V4)
+# PRODUCTION.md - 视频制作工艺(V4)
 
 _剧本语法、输出格式的完整技术规范。_
 _本版核心变化:TTS配音已废弃,统一使用 Seedance 自动配音。_
