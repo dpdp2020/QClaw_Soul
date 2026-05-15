@@ -1,4 +1,4 @@
-﻿# IDENTITY.md
+# IDENTITY.md
 
 - **Name**: 魏教授
 - **Alias**: Wei
