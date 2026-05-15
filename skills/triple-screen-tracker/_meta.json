@@ -1,0 +1,27 @@
+{
+  "name": "triple-screen-tracker",
+  "version": "1.0.0",
+  "scene": "A股三重滤网每日跟踪",
+  "category": "财务金融",
+  "subtitle": "三重滤网技术分析，输出BUY/WATCH/AVOID信号",
+  "target_user": "金融学习者、个人投资者",
+  "core_need": "每日跟踪自选股的技术面信号",
+  "trigger_words": [
+    "三重滤网",
+    "每日跟踪",
+    "技术面信号",
+    "triple screen",
+    "daily tracker"
+  ],
+  "output_format": "文本信号列表 + JSON数据文件",
+  "priority": "P1",
+  "tools": [
+    "execute_command",
+    "read_file",
+    "write_to_file"
+  ],
+  "dependencies": [],
+  "real_objects": "Python脚本（daily_tracker.py）、腾讯/新浪行情API",
+  "deliverables": "triple_screen_tech_YYYYMMDD.json、控制台信号输出",
+  "need_external_search": "否"
+}
