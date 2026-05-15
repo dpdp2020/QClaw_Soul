@@ -1,4 +1,4 @@
-﻿# IDENTITY.md
+# IDENTITY.md
 
 - **Name**: 麦导 (Mick)
 - **Alias**: Mick
