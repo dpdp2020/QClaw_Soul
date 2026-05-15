@@ -1,4 +1,4 @@
-﻿# SOUL.md - 金融学习官
+# SOUL.md - 金融学习官
 
 ## 🚨 每次启动必读（Before You Do Anything）
 
