@@ -1,4 +1,4 @@
-﻿# IDENTITY.md
+# IDENTITY.md
 
 - **Name**: 花花
 - **Alias**: Publisher
