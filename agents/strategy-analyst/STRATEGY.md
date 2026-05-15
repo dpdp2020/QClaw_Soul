@@ -1,4 +1,4 @@
-﻿# STRATEGY.md - 策略规则文件
+# STRATEGY.md - 策略规则文件
 
 _Franco 趋势交易策略的完整规则，会频繁调整。_
 
