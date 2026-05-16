@@ -38,3 +38,7 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
+
+### Doubao Video Generator
+
+- **Step 5 提交前必须问 Franco 确认** — 填完脚本、上传完参考图后，截图展示当前状态，等 Franco 说「确认提交」再点提交按钮。不可自动提交。
