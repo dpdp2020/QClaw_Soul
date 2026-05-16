@@ -11,6 +11,7 @@ description: "同步 QClaw Agent 定义、知识库和技能到 GitHub 仓库。
 |------|-----|
 | GitHub 仓库 | `dpdp2020/QClaw_Soul` |
 | 本地数据根目录 | `D:\wujm\QClaw_data` |
+| Managed Skills 目录 | `D:\wujm\QClaw_data\skills` |
 | 文件大小限制 | 50MB（GitHub 限制） |
 | 默认分支 | `main` |
 
@@ -82,8 +83,8 @@ description: "同步 QClaw Agent 定义、知识库和技能到 GitHub 仓库。
 ### 1. 获取 GitHub Token
 
 ```powershell
-# 方式一：从 config.json 读取（持久化配置，推荐）
-$cfgPath = "C:\Users\adigle\.qclaw\skills\qclaw-soul-sync\config.json"
+# 从 config.json 读取（持久化配置，推荐）
+$cfgPath = "D:\wujm\QClaw_data\skills\qclaw-soul-sync\config.json"
 $cfg = Get-Content $cfgPath | ConvertFrom-Json
 $token = $cfg.github_token
 ```
@@ -93,7 +94,7 @@ $token = $cfg.github_token
 ### 2. 克隆仓库
 
 ```powershell
-$workDir = "D:\wujm\QClaw\data\workspace\_soul_sync_tmp"
+$workDir = "D:\wujm\QClaw_data\workspace\_soul_sync_tmp"
 if (Test-Path $workDir) { Remove-Item -Recurse -Force $workDir }
 git clone "https://x-access-token:${token}@github.com/dpdp2020/QClaw_Soul.git" $workDir
 ```
@@ -139,15 +140,16 @@ Remove-Item -Recurse -Force $workDir
 | `media-operator` | `agents/media-operator/SOUL.md` |
 | `media-producer` | `agents/media-producer/SOUL.md` |
 | `media-publisher` | `agents/media-publisher/SOUL.md` |
+| `doubao-video` | `agents/doubao-video/SOUL.md` |
 | `knowledge-base` | 仅 `knowledge-base/*` |
 
 ## 同步技能包 (`--skill`)
 
-将本地 `~/.qclaw/skills/` 目录中的自定义技能包同步到仓库的 `skills/` 目录。
+将本地 `D:\wujm\QClaw_data\skills` 目录中的自定义技能包同步到仓库的 `skills/` 目录。
 
 **使用方式：**
 ```bash
-# 同步所有 managed skills（从 ~/.qclaw/skills/ 到 GitHub skills/）
+# 同步所有 managed skills（从 D:\wujm\QClaw_data\skills 到 GitHub skills/）
 python scripts/sync_soul.py --skill --token <GITHUB_PAT>
 
 # 预览模式（不实际推送）
@@ -157,26 +159,28 @@ python scripts/sync_soul.py --skill --token <GITHUB_PAT> --dry-run
 **同步范围（managed skills）：**
 | 技能名 | 说明 |
 |--------|------|
-| `triple-screen-tracker` | 三重滤网每日跟踪 |
-| `quant-backtester` | 量化策略回测 |
-| `mx_stock_simulator` | 股票模拟器 |
-| `mx_search` | 资讯搜索 |
+| `another_them` | 另一个TA：蒸馏人设为 Agent |
 | `aippt` | PPT生成 |
-| `kdocs` | 文档处理 |
-| `persona-switch` | 人格切换 |
+| `doubao-video-generator` | 豆包视频生成器 |
 | `fbs_bookwriter` | 书稿写作 |
-| `wecom-weisheng-scrm` | 企业微信 |
+| `imap-smtp-email` | 个人邮箱收发 |
+| `kdocs` | 文档处理 |
+| `mx_search` | 资讯搜索 |
+| `mx_stock_simulator` | 股票模拟器 |
+| `persona-switch` | 人格切换 |
 | `qclaw-soul-sync` | 本技能本身 |
+| `quant-backtester` | 量化策略回测 |
+| `triple-screen-tracker` | 三重滤网每日跟踪 |
+| `wecom-weisheng-scrm` | 企业微信 |
 
 **仓库目标结构：**
 ```
 dpdp2020/QClaw_Soul
 └── skills/
-    ├── triple-screen-tracker/
-    │   ├── SKILL.md
-    │   ├── _meta.json
-    │   └── scripts/
-    │       └── triple_screen_tracker.py
+    ├── another_them/
+    │   └── SKILL.md
+    ├── aippt/
+    │   └── SKILL.md
     └── ...
 ```
 
@@ -205,8 +209,10 @@ dpdp2020/QClaw_Soul
 - PAT Token 存储在 `config.json`，不会在对话中明文展示。
 - 同步完成后提醒用户删除已暴露的 Token（如在 GitHub 界面手动撤销）。
 - 大文件建议用 Git LFS 或微云备份。
+- Managed Skills 根目录已迁移至 `D:\wujm\QClaw_data\skills`（2026-05-16），旧路径 `C:\Users\adigle\.qclaw\skills` 已废弃。
 
 ## 版本历史
 
+- 2026-05-16: Managed Skills 目录从 `C:\Users\adigle\.qclaw\skills` 迁移至 `D:\wujm\QClaw_data\skills`；更新技能列表（含新增 `another_them`、`doubao-video-generator`、`imap-smtp-email`）；config.json 路径同步更新；token 获取路径改为 D 盘
 - 2026-05-10: 新增 `assets/actors/*` 到知识库文件映射；新增 `--skill` 模式，支持将本地技能包同步到仓库 `skills/` 目录
 - 2026-05-04: 支持 config.json 持久化 token，改用 Invoke-RestMethod (PowerShell) 替代 curl。
