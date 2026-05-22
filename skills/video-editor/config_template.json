@@ -1,0 +1,1 @@
+{"scenes": ["scene1.mp4", "scene2.mp4"], "bgm": "bgm.mp3", "title": "在这里输入标题", "intro_video": "D:\\wujm\\QClaw_data\\assets\\actors\\intro_3s.mp4", "intro_duration": 3, "title_duration": 0, "scene_transition": 0.5, "bgm_volume": 0.35, "output": "final.mp4", "font": "字魂241号-秋枫体", "font_size": 70, "resolution": "720x1280"}
