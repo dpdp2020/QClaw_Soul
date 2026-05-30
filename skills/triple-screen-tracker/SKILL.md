@@ -63,6 +63,20 @@ python scripts/triple_screen_tracker.py
 
 ## 自选股列表
 
+脚本自动从 `workspace-strategy-analyst/stock_pool.json` 读取280只成长股。
+
+### 数据来源
+
+选股池文件：`D:\wujm\QClaw_data\workspace-strategy-analyst\stock_pool.json`
+
+包含280只高成长股，字段包括：
+- 股票名称、代码
+- 行业分类
+- 营收增长率、净利润增长率
+- 公司市值
+
+### 核心9只龙头股
+
 | 代码 | 名称 | 板块 |
 |------|------|------|
 | 300394 | 天孚通信 | 创业板 |
@@ -75,16 +89,33 @@ python scripts/triple_screen_tracker.py
 | 300750 | 宁德时代 | 创业板 |
 | 002371 | 北方华创 | 主板 |
 
-## 自定义自选股
+### 自定义选股池
 
-编辑 `scripts/triple_screen_tracker.py` 中的 `WATCH_LIST` 变量：
+**方式1：修改stock_pool.json（推荐）**
+
+编辑 `D:\wujm\QClaw_data\workspace-strategy-analyst\stock_pool.json`，添加或删除股票：
+
+```json
+{
+  "stocks": [
+    {"name": "股票名", "code": "000001", "industry": "行业", ...},
+    ...
+  ]
+}
+```
+
+**方式2：使用环境变量指定其他JSON文件**
+
+```bash
+export TRIPLE_SCREEN_STOCK_POOL=/path/to/your/stocks.json
+python triple_screen_tracker.py
+```
+
+**方式3：代码中传参**
 
 ```python
-WATCH_LIST = [
-    ("300394", "天孚通信"),
-    ("300308", "中际旭创"),
-    # 添加你的股票...
-]
+from triple_screen_tracker import load_watch_list
+WATCH_LIST = load_watch_list("/path/to/stocks.json")
 ```
 
 ## 输出格式
